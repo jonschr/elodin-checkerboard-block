@@ -1,0 +1,28 @@
+.checkerboard-wrap {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
+    .checkerboard-image,
+    .checkerboard-content {
+        width: 100%;
+        min-width: 50%;
+        flex: 0 1 auto;
+    }
+
+    .checkerboard-content {}
+
+    .checkerboard-content-wrap {
+        padding: 0 80px;
+        max-width: calc(600px + 80px);
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .checkerboard-image {
+        background-color: black;
+        min-height: 600px;
+    }
+}

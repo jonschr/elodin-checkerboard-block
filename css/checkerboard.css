@@ -1,0 +1,19 @@
+.checkerboard-wrap {
+  display: flex;
+  overflow: hidden;
+  align-items: center; }
+  .checkerboard-wrap .checkerboard-image,
+  .checkerboard-wrap .checkerboard-content {
+    width: 100%;
+    min-width: 50%;
+    flex: 0 1 auto; }
+  .checkerboard-wrap .checkerboard-content-wrap {
+    padding: 0 80px;
+    max-width: calc(600px + 80px); }
+    .checkerboard-wrap .checkerboard-content-wrap :last-child {
+      margin-bottom: 0; }
+  .checkerboard-wrap .checkerboard-image {
+    background-color: black;
+    min-height: 600px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2hlY2tlcmJvYXJkLmNzcyIsInNvdXJjZXMiOlsiY2hlY2tlcmJvYXJkLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmNoZWNrZXJib2FyZC13cmFwIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIC5jaGVja2VyYm9hcmQtaW1hZ2UsXG4gICAgLmNoZWNrZXJib2FyZC1jb250ZW50IHtcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIG1pbi13aWR0aDogNTAlO1xuICAgICAgICBmbGV4OiAwIDEgYXV0bztcbiAgICB9XG5cbiAgICAuY2hlY2tlcmJvYXJkLWNvbnRlbnQge31cblxuICAgIC5jaGVja2VyYm9hcmQtY29udGVudC13cmFwIHtcbiAgICAgICAgcGFkZGluZzogMCA4MHB4O1xuICAgICAgICBtYXgtd2lkdGg6IGNhbGMoNjAwcHggKyA4MHB4KTtcblxuICAgICAgICA6bGFzdC1jaGlsZCB7XG4gICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAwO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgLmNoZWNrZXJib2FyZC1pbWFnZSB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICAgICAgICBtaW4taGVpZ2h0OiA2MDBweDtcbiAgICB9XG59Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEFBQUEsa0JBQWtCLENBQUM7RUFDZixPQUFPLEVBQUUsSUFBSTtFQUNiLFFBQVEsRUFBRSxNQUFNO0VBQ2hCLFdBQVcsRUFBRSxNQUFNLEdBd0J0QjtFQTNCRCxBQUtJLGtCQUxjLENBS2QsbUJBQW1CO0VBTHZCLGtCQUFrQixDQU1kLHFCQUFxQixDQUFDO0lBQ2xCLEtBQUssRUFBRSxJQUFJO0lBQ1gsU0FBUyxFQUFFLEdBQUc7SUFDZCxJQUFJLEVBQUUsUUFBUSxHQUNqQjtFQVZMLEFBY0ksa0JBZGMsQ0FjZCwwQkFBMEIsQ0FBQztJQUN2QixPQUFPLEVBQUUsTUFBTTtJQUNmLFNBQVMsRUFBRSxrQkFBa0IsR0FLaEM7SUFyQkwsQUFrQlEsa0JBbEJVLENBY2QsMEJBQTBCLENBSXRCLFdBQVcsQ0FBQztNQUNSLGFBQWEsRUFBRSxDQUFDLEdBQ25CO0VBcEJULEFBdUJJLGtCQXZCYyxDQXVCZCxtQkFBbUIsQ0FBQztJQUNoQixnQkFBZ0IsRUFBRSxLQUFLO0lBQ3ZCLFVBQVUsRUFBRSxLQUFLLEdBQ3BCIn0= */
