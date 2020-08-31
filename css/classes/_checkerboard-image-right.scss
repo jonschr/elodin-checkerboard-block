@@ -1,0 +1,16 @@
+.checkerboard.checkerboard-image-right {
+    @include desktop {
+        .checkerboard-image {
+            order: 1;
+        }
+
+        .checkerboard-content {
+            order: 0;
+        }
+
+        .checkerboard-content-wrap {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}

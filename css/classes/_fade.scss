@@ -1,0 +1,18 @@
+.checkerboard {
+    .fade {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        bottom: 0;
+        background: linear-gradient(90deg, transparent, white);
+    }
+
+    &.checkerboard-image-right {
+        .fade {
+            left: 0;
+            right: auto;
+            background: linear-gradient(90deg, white, transparent);
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.checkerboard-wrap {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
+    @include notdesktop {
+        flex-flow: row wrap;
+    }
+
+    .checkerboard-image,
+    .checkerboard-content {
+        width: 100%;
+        min-width: 50%;
+        flex: 0 1 auto;
+    }
+
+    .checkerboard-content-wrap {
+        @include desktop {
+            padding: 0 80px;
+            max-width: calc(600px + 80px);
+        }
+
+        @include notdesktop {
+            padding: 30px;
+            max-width: 100%;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .checkerboard-image {
+        background-color: rgba(black, 0.1);
+        min-height: 600px;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+
+        @include tablet {
+            min-height: 400px;
+        }
+
+        @include mobile {
+            min-height: 200px;
+        }
+    }
+}
