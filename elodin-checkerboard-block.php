@@ -3,7 +3,7 @@
 	Plugin Name: Checkerboard Block
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
-	Version: 1.0
+	Version: 1.0.1
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -28,8 +28,10 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'CHECKERBOARD_BLOCK', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0' );
+define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0.1' );
 
+// Get the fields from php (the json version is there in case we want to edit it further using a UI)
+require_once( 'acf-json/fields.php');
 
 add_action('acf/init', 'checkerboard_register_block');
 function checkerboard_register_block() {

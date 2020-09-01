@@ -1,9 +1,12 @@
+### 1.0.1
+* Adding the fields (whoops)
+
 ### 1.0
 * Adding fade effect
 * Adding background color
 * Adding the image setting
 * Adding parallax effect
-* Adding 
+* Adding updaets functionality
 
 ### 0.1
 * Adding build process for sass
