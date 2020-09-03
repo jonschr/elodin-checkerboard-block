@@ -1,6 +1,6 @@
 <?php
 /*
-	Plugin Name: Checkerboard Block
+	Plugin Name: Elodin Block: Checkerboard
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
 	Version: 1.0.1
