@@ -1,3 +1,6 @@
+### 1.0.3
+* Updating icons and keywords
+
 ### 1.0.2 
 * Renaming the block so that my blocks stay together in the plugins UI
 
