@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Block: Checkerboard
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
-	Version: 1.0.3
+	Version: 1.0.4
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -28,7 +28,7 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'CHECKERBOARD_BLOCK', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0.3' );
+define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0.4' );
 
 // Get the fields from php (the json version is there in case we want to edit it further using a UI)
 require_once( 'acf-json/fields.php');
@@ -90,10 +90,10 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
         $className .= ' align' . $block['align'];
     
     // Alignment class (this is a setting, not the default align)
-    if ( $alignment == true )
+    if ( $alignment == 'imageright' )
         $className .= ' ' . 'checkerboard-image-right';
         
-    if ( $background_attachment == true )
+    if ( $background_attachment == 'fixed' )
         $className .= ' ' . 'background-fixed';
         
         
@@ -151,7 +151,7 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
     printf( '<div id="%s" class="checkerboard-wrap %s" style="background-color:%s">', $id, $className, $section_background_color );
         printf( '<div class="checkerboard-image" style="background-image:url(%s);">', $background_image );
         
-            if ( $add_fade_effect == true )
+            if ( $add_fade_effect == 'fade' )
                 printf( '<div class="fade"></div>');
         
         echo '</div>';

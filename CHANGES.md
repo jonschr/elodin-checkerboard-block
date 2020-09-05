@@ -1,3 +1,6 @@
+### 1.0.4
+* Updating true/false fields to be button groups for better readability and extensibility.
+
 ### 1.0.3
 * Updating icons and keywords
 
