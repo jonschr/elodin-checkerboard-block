@@ -25,7 +25,7 @@
             max-width: 100%;
         }
 
-        :last-child {
+        > :last-child {
             margin-bottom: 0;
         }
     }
@@ -43,6 +43,25 @@
 
         @include mobile {
             min-height: 200px;
+        }
+    }
+}
+
+//* Checkerboard right
+@include desktop {
+    .checkerboard.checkerboard-image-right {
+
+        .checkerboard-image {
+            order: 1;
+        }
+
+        .checkerboard-content {
+            order: 0;
+        }
+
+        .checkerboard-content-wrap {
+            margin-left: auto;
+            margin-right: 0;
         }
     }
 }

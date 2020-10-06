@@ -1,3 +1,8 @@
+### 1.0.5
+* Bugfix: some of the src styles were lost, brought those back
+* Bugfix: making the margin-bottom: 0 on the :last-child more specific (so to not affect galleries)
+* Bugfix: removing the fade effect once the image goes all the way across the page
+
 ### 1.0.4
 * Updating true/false fields to be button groups for better readability and extensibility.
 
