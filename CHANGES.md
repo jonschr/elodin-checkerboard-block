@@ -1,3 +1,6 @@
+### 1.0.6
+* Bugfix: A few isset() php notices
+
 ### 1.0.5
 * Bugfix: some of the src styles were lost, brought those back
 * Bugfix: making the margin-bottom: 0 on the :last-child more specific (so to not affect galleries)

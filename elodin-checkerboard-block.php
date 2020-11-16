@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Block: Checkerboard
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
-	Version: 1.0.5
+	Version: 1.0.6
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -28,7 +28,7 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'CHECKERBOARD_BLOCK', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0.5' );
+define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0.6' );
 
 // Get the fields from php (the json version is there in case we want to edit it further using a UI)
 require_once( 'acf-json/fields.php');
@@ -103,7 +103,7 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
         @media( min-width: 960px ) { 
             #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
                 <?php 
-                if ( $minimum_height ) {
+                if ( isset( $minimum_height ) ) {
                     printf( 'min-height: %spx !important;', $minimum_height );
                 }
                 ?>
@@ -113,7 +113,7 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
         @media( min-width: 600px and max-width: 960px ) { 
             #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
                 <?php 
-                if ( $minimum_height_tablet ) {
+                if ( isset( $minimum_height_tablet ) ) {
                     printf( 'min-height: %spx !important;', $minimum_height_tablet );
                 }
                 ?>
@@ -123,7 +123,7 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
         @media( max-width: 600px ) { 
             #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
                 <?php 
-                if ( $minimum_height_mobile ) {
+                if ( isset( $minimum_height_mobile ) ) {
                     printf( 'min-height: %spx !important;', $minimum_height_mobile );
                 }
                 ?>
@@ -133,11 +133,11 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
         @media( min-width: 600px ) { 
             #checkerboard-<?php echo $block['id']; ?> .checkerboard-image .fade {
                 <?php 
-                if ( $section_background_color && $add_fade_effect && !$alignment ) {
+                if ( isset( $section_background_color ) && isset( $add_fade_effect ) && !isset( $alignment ) ) {
                     printf( 'background: linear-gradient( 90deg, transparent, %s ) !important;', $section_background_color );
                 }
                 
-                if ( $section_background_color && $add_fade_effect && $alignment ) {
+                if ( isset( $section_background_color ) && isset( $add_fade_effect ) && isset( $alignment ) ) {
                     printf( 'background: linear-gradient( 90deg, %s, transparent ) !important;', $section_background_color );
                 }
                 ?>
