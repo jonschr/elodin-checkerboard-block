@@ -95,58 +95,7 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
         
     if ( $background_attachment == 'fixed' )
         $className .= ' ' . 'background-fixed';
-        
-        
-    ?>
-    <style>
-        
-        @media( min-width: 960px ) { 
-            #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
-                <?php 
-                if ( isset( $minimum_height ) ) {
-                    printf( 'min-height: %spx !important;', $minimum_height );
-                }
-                ?>
-            }
-        }
-        
-        @media( min-width: 600px and max-width: 960px ) { 
-            #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
-                <?php 
-                if ( isset( $minimum_height_tablet ) ) {
-                    printf( 'min-height: %spx !important;', $minimum_height_tablet );
-                }
-                ?>
-            }
-        }
-        
-        @media( max-width: 600px ) { 
-            #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
-                <?php 
-                if ( isset( $minimum_height_mobile ) ) {
-                    printf( 'min-height: %spx !important;', $minimum_height_mobile );
-                }
-                ?>
-            }
-        }
-        
-        @media( min-width: 600px ) { 
-            #checkerboard-<?php echo $block['id']; ?> .checkerboard-image .fade {
-                <?php 
-                if ( isset( $section_background_color ) && isset( $add_fade_effect ) && !isset( $alignment ) ) {
-                    printf( 'background: linear-gradient( 90deg, transparent, %s ) !important;', $section_background_color );
-                }
-                
-                if ( isset( $section_background_color ) && isset( $add_fade_effect ) && isset( $alignment ) ) {
-                    printf( 'background: linear-gradient( 90deg, %s, transparent ) !important;', $section_background_color );
-                }
-                ?>
-            }
-        }
-        
-    </style>
-    <?php
-    
+            
     //* Render
     printf( '<div id="%s" class="checkerboard-wrap %s" style="background-color:%s">', $id, $className, $section_background_color );
         printf( '<div class="checkerboard-image" style="background-image:url(%s);">', $background_image );
@@ -160,6 +109,62 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
                 echo '<InnerBlocks />';
             echo '</div>';
         echo '</div>';
+        
+        ?>
+        <style>
+            
+            @media( min-width: 960px ) { 
+                #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
+                    <?php 
+                    if ( isset( $minimum_height ) ) {
+                        printf( 'min-height: %spx !important;', $minimum_height );
+                    }
+                    ?>
+                }
+            }
+            
+            @media( min-width: 600px and max-width: 960px ) { 
+                #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
+                    <?php 
+                    if ( isset( $minimum_height_tablet ) ) {
+                        printf( 'min-height: %spx !important;', $minimum_height_tablet );
+                    }
+                    ?>
+                }
+            }
+            
+            @media( max-width: 600px ) { 
+                #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
+                    <?php 
+                    if ( isset( $minimum_height_mobile ) ) {
+                        printf( 'min-height: %spx !important;', $minimum_height_mobile );
+                    }
+                    ?>
+                }
+            }
+            
+            @media( min-width: 600px ) { 
+                
+                #checkerboard-<?php echo $block['id']; ?> .checkerboard-image .fade {
+                    <?php                     
+                    if ( isset( $section_background_color ) && isset( $add_fade_effect ) && !isset( $alignment ) ) {
+                        printf( 'background: linear-gradient( 90deg, transparent, %s ) !important;', $section_background_color );
+                    }
+                    
+                    if ( isset( $section_background_color ) && isset( $add_fade_effect ) && isset( $alignment ) ) {
+                        if ( $alignment == 'imageleft' )
+                            printf( 'background: linear-gradient( 90deg, transparent, %s ) !important;', $section_background_color );
+                        
+                        if ( $alignment == 'imageright' )
+                            printf( 'background: linear-gradient( 90deg, %s, transparent ) !important;', $section_background_color );
+                    }
+                    ?>
+                }
+            }
+            
+        </style>
+        <?php
+    
     echo '</div>';
 }
 

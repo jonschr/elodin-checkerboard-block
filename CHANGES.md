@@ -1,3 +1,7 @@
+### 1.0.7
+* Bugfix: Adding better logic for color fading
+* Bugfix: Moving the style block inside the gutenberg block, as it can interfere with necessary :first-child and :last-child logic in themes
+
 ### 1.0.6
 * Bugfix: A few isset() php notices
 
