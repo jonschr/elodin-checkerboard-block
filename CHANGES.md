@@ -1,3 +1,6 @@
+### 1.0.9
+* Bugfix: duplicate function name fix (conflict with the Elodin Section Block plugin)
+
 ### 1.0.8 
 * Adding ACF so that the plugin will operate on installs without ACF installed
 
