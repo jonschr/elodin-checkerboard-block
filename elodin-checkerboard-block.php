@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Block: Checkerboard
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
-	Version: 1.0.6
+	Version: 1.0.7
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -28,7 +28,28 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'CHECKERBOARD_BLOCK', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0.6' );
+define ( 'CHECKERBOARD_BLOCK_VERSION', '1.0.7' );
+
+/////////////////
+// INCLUDE ACF //
+/////////////////
+
+// Define path and URL to the ACF plugin.
+define( 'ELODIN_CHECKERBOARD_BLOCK_ACF_PATH', plugin_dir_path( __FILE__ ) . 'vendor/acf/' );
+define( 'ELODIN_CHECKERBOARD_BLOCK_ACF_URL', plugin_dir_url( __FILE__ ) . 'vendor/acf/' );
+
+// Include the ACF plugin.
+include_once( ELODIN_CHECKERBOARD_BLOCK_ACF_PATH . 'acf.php' );
+
+// Customize the url setting to fix incorrect asset URLs.
+add_filter('acf/settings/url', 'elodin_sections_block_acf_settings_url');
+function elodin_sections_block_acf_settings_url( $url ) {
+    return ELODIN_CHECKERBOARD_BLOCK_ACF_URL;
+}
+
+////////////
+// FIELDS //
+////////////
 
 // Get the fields from php (the json version is there in case we want to edit it further using a UI)
 require_once( 'acf-json/fields.php');

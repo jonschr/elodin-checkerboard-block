@@ -1,3 +1,6 @@
+### 1.0.8 
+* Adding ACF so that the plugin will operate on installs without ACF installed
+
 ### 1.0.7
 * Bugfix: Adding better logic for color fading
 * Bugfix: Moving the style block inside the gutenberg block, as it can interfere with necessary :first-child and :last-child logic in themes
