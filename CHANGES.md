@@ -1,4 +1,4 @@
-### 1.0.10
+### 1.1
 * Ensuring that ACF only loads once
 
 ### 1.0.9
