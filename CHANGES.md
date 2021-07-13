@@ -1,3 +1,6 @@
+### 1.0.10
+* Ensuring that ACF only loads once
+
 ### 1.0.9
 * Bugfix: duplicate function name fix (conflict with the Elodin Section Block plugin)
 
