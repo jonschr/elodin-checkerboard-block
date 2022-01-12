@@ -16,7 +16,7 @@
 
     .checkerboard-content-wrap {
         @include desktop {
-            padding: 0 80px;
+            padding: 80px 80px;
             max-width: calc(600px + 80px);
         }
 
@@ -36,6 +36,7 @@
         position: relative;
         background-size: cover;
         background-position: center center;
+        align-self: stretch;
 
         @include tablet {
             min-height: 400px;

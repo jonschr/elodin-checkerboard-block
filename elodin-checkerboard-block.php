@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Block: Checkerboard
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
-	Version: 1.1
+	Version: 1.2
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -119,6 +119,11 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
     if ( $alignment == 'imageright' )
         $className .= ' ' . 'checkerboard-image-right';
         
+    // Fade class (this is not the only component of this)
+    if ( $add_fade_effect == 'fade' )
+        $className .= ' ' . 'checkerboard-fade';
+        
+    // Background attachment
     if ( $background_attachment == 'fixed' )
         $className .= ' ' . 'background-fixed';
             

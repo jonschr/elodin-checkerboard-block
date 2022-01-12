@@ -1,5 +1,5 @@
 @include desktop {
-    .checkerboard {
+    .checkerboard.checkerboard-fade {
         .fade {
             position: absolute;
             top: 0;
@@ -9,11 +9,21 @@
             background: linear-gradient(90deg, transparent, white);
         }
 
+        .checkerboard-content-wrap {
+            padding-left: 0;
+        }
+
+
+
         &.checkerboard-image-right {
             .fade {
                 left: 0;
                 right: auto;
                 background: linear-gradient(90deg, white, transparent);
+            }
+
+            .checkerboard-content-wrap {
+                padding-right: 0;
             }
         }
     }
