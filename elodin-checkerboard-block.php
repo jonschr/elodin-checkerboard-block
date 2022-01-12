@@ -116,8 +116,11 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
         $className .= ' align' . $block['align'];
     
     // Alignment class (this is a setting, not the default align)
-    if ( $alignment == 'imageright' )
+    if ( $alignment == 'imageright' ) {
         $className .= ' ' . 'checkerboard-image-right';
+    } else {
+        $className .= ' ' . 'checkerboard-image-left';
+    }
         
     // Fade class (this is not the only component of this)
     if ( $add_fade_effect == 'fade' )
