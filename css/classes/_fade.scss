@@ -9,11 +9,11 @@
             background: linear-gradient(90deg, transparent, white);
         }
 
-        .checkerboard-content-wrap {
-            padding-left: 0;
+        &.checkerboard-image-left {
+            .checkerboard-content-wrap {
+                padding-left: 0;
+            }
         }
-
-
 
         &.checkerboard-image-right {
             .fade {
