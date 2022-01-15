@@ -1,4 +1,7 @@
-### 1.2
+## 1.3.1
+* Bugfix: restoring spacing a bit
+
+### 1.3
 * Adding a few quality of life styles for fade effect; we don't need additional text spacing if there's going to be a fade effect there
 * Fix for if there's too much content on the site on desktop; automatic image stretching added
 

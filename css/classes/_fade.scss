@@ -13,7 +13,7 @@
     &.checkerboard-image-left {
         @include notmobile {
             .checkerboard-content-wrap {
-                padding-left: 0;
+                // padding-left: 0;
             }
         }
     }
@@ -29,7 +29,7 @@
 
         @include notmobile {
             .checkerboard-content-wrap {
-                padding-right: 0;
+                // padding-right: 0;
             }
         }
     }
