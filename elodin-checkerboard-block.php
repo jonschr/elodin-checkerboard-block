@@ -28,7 +28,7 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'CHECKERBOARD_BLOCK', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'CHECKERBOARD_BLOCK_VERSION', '1.3.2' );
+define ( 'CHECKERBOARD_BLOCK_VERSION', '1.3.3' );
 
 /////////////////
 // INCLUDE ACF //
