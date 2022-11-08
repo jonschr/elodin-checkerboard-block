@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Block: Checkerboard
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
-	Version: 1.3.2
+	Version: 1.3.3
     Author: Jon Schroeder
     Author URI: https://elod.in
 
