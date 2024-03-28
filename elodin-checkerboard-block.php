@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Block: Checkerboard
 	Plugin URI: https://elod.in
     Description: Just another checkerboard block
-	Version: 1.3.3
+	Version: 1.3.4
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -28,7 +28,7 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'CHECKERBOARD_BLOCK', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'CHECKERBOARD_BLOCK_VERSION', '1.3.3' );
+define ( 'CHECKERBOARD_BLOCK_VERSION', '1.3.4' );
 
 /////////////////
 // INCLUDE ACF //
@@ -157,7 +157,7 @@ function checkerboard_render( $block, $content = '', $is_preview = false, $post_
                 }
             }
             
-            @media( min-width: 600px and max-width: 960px ) { 
+            @media( min-width: 600px ) and ( max-width: 960px ) { 
                 #checkerboard-<?php echo $block['id']; ?> .checkerboard-image {
                     <?php 
                     if ( isset( $minimum_height_tablet ) ) {
